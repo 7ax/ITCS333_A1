@@ -268,11 +268,15 @@ details[open] summary {
     font-family: 'Comic Sans MS', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
+/* General Logo Styling */
 #logo {
-    font-size: 2rem;  
-    white-space: nowrap;  
+    font-size: 2rem;  /* Default font size */
+    white-space: nowrap;  /* Prevent line breaks */
+    overflow: hidden;  /* Ensure content doesn't overflow */
+    text-overflow: ellipsis;  /* Handle cases where the text might be too long */
 }
 
+/* Responsive Design for Mobile */
 @media (max-width:768px) {
     .matrix-schedule {
         display: none
@@ -307,8 +311,9 @@ details[open] summary {
         grid-template-columns: 1fr
     }
     #logo {
-        font-size: 1.5rem;  /* Make the font smaller for mobile */
-        white-space: nowrap; /* Ensure the logo stays on one line */
+        font-size: 1.5rem;  /* Adjust font size for mobile */
+        white-space: nowrap;  /* Keep the logo on one line */
+        text-align: center;  /* Ensure it's centered on mobile */
     }
 }
 
