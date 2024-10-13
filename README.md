@@ -17,5 +17,5 @@ Check out the live preview of the project here: [Live Preview](https://7ax.githu
 - CSS (Flexbox & Grid)
 - Responsive design with media queries
 
-## How to View
-Simply open the `index.html` file in your browser to view the website.
+## Live Preview
+Check out the live preview of the project here: [Live Preview](https://7ax.github.io/ITCS333_A1/)
