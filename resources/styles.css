@@ -239,24 +239,56 @@ footer p {
     color: #fff;
 }
 
-/* Schedule Section Styling */
+/* General Styling for the Schedule */
 .schedule-container {
-    overflow-x: auto;
     margin: 2rem auto;
     max-width: 100%;
-    border-radius: 15px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    background-color: var(--background-color);
 }
 
+/* Accordion Styling */
+details summary {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    font-size: 1.25rem;
+    font-family: 'Patrick Hand', cursive;
+    cursor: pointer;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    margin-bottom: 5px;
+    outline: none;
+    color: var(--text-color);
+}
+
+details summary:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+details ul {
+    padding: 1rem;
+    margin: 0;
+    list-style: none;
+}
+
+details ul li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-color);
+}
+
+details[open] summary {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Matrix Table Styling */
 .schedule-table {
     width: 100%;
     border-collapse: collapse;
-    background-color: var(--background-color);
     text-align: center;
-    font-size: 1rem;
-    border-radius: 12px;
-    overflow: hidden;
+    background-color: var(--background-color);
+    border-radius: 15px;
 }
 
 .schedule-table th, .schedule-table td {
@@ -266,30 +298,24 @@ footer p {
 
 .schedule-table th {
     background-color: var(--secondary-color);
-    color: var(--text-color);
     font-family: 'Patrick Hand', cursive;
-    font-size: 1.25rem;
+    color: #fff;
 }
 
 .schedule-table td {
     background-color: #f9f9f9;
-    color: var(--text-color);
     font-family: 'Comic Sans MS', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    transition: background-color 0.3s ease;
 }
 
-.schedule-table td:hover {
-    background-color: var(--accent-color);
-    color: #fff;
-    cursor: pointer;
-}
-
-
-
-
-
-/* Mobile Adjustments */
+/* Responsive Design */
 @media (max-width: 768px) {
+    .matrix-schedule {
+        display: none;  /* Hide matrix table on mobile */
+    }
+
+    .accordion-schedule {
+        display: block; /* Show accordion on mobile */
+    }
     section {
         margin: 1rem;
         padding: 1.5rem;
@@ -310,10 +336,7 @@ footer p {
     footer p {
         font-size: 1rem;
     }
-    .schedule-table th, 
-    .schedule-table td {
-        font-size: 0.875rem;
-    }
+    
     .teacher-grid {
         grid-template-columns: 1fr;
     }
