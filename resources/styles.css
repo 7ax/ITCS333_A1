@@ -210,6 +210,54 @@ footer p {
     color: #fff;
 }
 
+/* Schedule Section Styling */
+.schedule-container {
+    overflow-x: auto;
+    margin: 2rem auto;
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    background-color: var(--background-color);
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--background-color);
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.schedule-table th, .schedule-table td {
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+}
+
+.schedule-table th {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.25rem;
+}
+
+.schedule-table td {
+    background-color: #f9f9f9;
+    color: var(--text-color);
+    font-family: 'Comic Sans MS', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.schedule-table td:hover {
+    background-color: var(--accent-color);
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+
 
 /* Mobile Adjustments */
 @media (max-width: 768px) {
@@ -232,5 +280,9 @@ footer p {
 
     footer p {
         font-size: 1rem;
+    }
+    .schedule-table th, 
+    .schedule-table td {
+        font-size: 0.875rem;
     }
 }
