@@ -268,6 +268,11 @@ details[open] summary {
     font-family: 'Comic Sans MS', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
+#logo {
+    font-size: 2rem;  
+    white-space: nowrap;  
+}
+
 @media (max-width:768px) {
     .matrix-schedule {
         display: none
@@ -300,6 +305,10 @@ details[open] summary {
 
     .teacher-grid {
         grid-template-columns: 1fr
+    }
+    #logo {
+        font-size: 1.5rem;  /* Make the font smaller for mobile */
+        white-space: nowrap; /* Ensure the logo stays on one line */
     }
 }
 
