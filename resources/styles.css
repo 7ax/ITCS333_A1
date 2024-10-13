@@ -341,3 +341,8 @@ details[open] summary {
         grid-template-columns: 1fr;
     }
 }
+
+@media (min-width: 769px) {
+    .accordion-schedule {
+        display: none; /* Hide accordion on desktop */
+    }
