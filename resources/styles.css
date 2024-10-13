@@ -1,15 +1,14 @@
 :root {
-    --primary-color: #ff6f61; /* Coral Red */
-    --secondary-color: #ffd166; /* Sunshine Yellow */
-    --accent-color: #06d6a0; /* Aqua Green */
-    --background-color: #fdf5e6; /* Soft Creamy White */
-    --heading-color: #377dff; /* Vibrant Sky Blue */
-    --text-color: #333333; /* Dark Charcoal */
-    --border-color: #e0e0e0; /* Light Gray */
-    --playful-bg: #ffecd2; /* Fun background color for sections */
+    --primary-color: #ff6f61;
+    --secondary-color: #ffd166;
+    --accent-color: #06d6a0;
+    --background-color: #fdf5e6;
+    --heading-color: #377dff;
+    --text-color: #333333;
+    --border-color: #e0e0e0;
+    --playful-bg: #ffecd2
 }
 
-/* General Styling */
 body {
     font-family: 'Comic Sans MS', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--background-color);
@@ -17,27 +16,26 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    overflow-x: hidden;
+    overflow-x: hidden
 }
 
-/* Header Styling */
 header {
     background-color: var(--secondary-color);
     padding: 1.5rem 2rem !important;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 1000
 }
 
 header h1 {
     font-size: 2rem;
     color: var(--primary-color);
     font-family: 'Patrick Hand', cursive;
-    margin: 0;
+    margin: 0
 }
 
 nav ul {
@@ -45,7 +43,7 @@ nav ul {
     gap: 1rem;
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0
 }
 
 nav a {
@@ -53,47 +51,45 @@ nav a {
     background-color: var(--accent-color);
     text-decoration: none;
     font-size: 1rem;
-    padding: 0.75rem 1rem;
-    transition: background-color 0.3s, color 0.3s;
-    border-radius: 12px;
+    padding: .75rem 1rem;
+    transition: background-color .3s, color .3s;
+    border-radius: 12px
 }
 
 nav a:hover {
     background-color: var(--primary-color);
-    color: #fff;
+    color: #fff
 }
 
-/* Mobile Header Adjustments */
-@media (max-width: 768px) {
+@media (max-width:768px) {
     header {
         flex-direction: column;
-        align-items: center;
+        align-items: center
     }
 
     header h1 {
-        text-align: center;
+        text-align: center
     }
 
     nav {
-        display: none; /* Hide navigation in mobile */
+        display: none
     }
 }
 
-/* Welcome Section Styling */
 #welcome {
     background-color: var(--playful-bg);
     padding: 2.5rem 2rem;
     text-align: center;
     border-radius: 15px;
     margin: 2rem auto;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, .1)
 }
 
 #welcome h2 {
     font-size: 2.5rem;
     color: var(--heading-color);
     font-family: 'Patrick Hand', cursive;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem
 }
 
 #welcome p {
@@ -101,20 +97,18 @@ nav a:hover {
     color: var(--text-color);
     line-height: 1.8;
     max-width: 600px;
-    margin: 0 auto;
+    margin: 0 auto
 }
 
-/* Section Styling */
 section {
     margin: 2rem 1.5rem;
     padding: 2rem;
     background-color: #fff;
     border-radius: 15px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
-    border: 1px solid var(--border-color);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, .05);
+    border: 1px solid var(--border-color)
 }
 
-/* Section Title Styling */
 h2 {
     color: var(--heading-color);
     font-size: 2rem;
@@ -122,60 +116,56 @@ h2 {
     margin-bottom: 1rem;
     border-bottom: 3px solid var(--primary-color);
     display: inline-block;
-    padding-bottom: 0.5rem;
+    padding-bottom: .5rem
 }
 
-
-
-/* Photo Gallery Grid */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 1.5rem;
+    gap: 1.5rem
 }
 
 .grid img {
     width: 100%;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+    transition: transform .3s, box-shadow .3s
 }
 
 .grid img:hover {
     transform: scale(1.08);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .2)
 }
 
 .caption {
     text-align: center;
     font-size: 1rem;
     color: var(--text-color);
-    margin-top: 0.75rem;
-    font-style: italic;
+    margin-top: .75rem;
+    font-style: italic
 }
 
-/* Teacher Section Styling */
 #teachers {
     padding: 2rem;
     background-color: var(--playful-bg);
-    text-align: center;
+    text-align: center
 }
 
 .teacher-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
-    justify-items: center;
+    justify-items: center
 }
 
 .teacher-card {
     background-color: #fff;
     border-radius: 15px;
     padding: 1.5rem;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, .1);
     width: 100%;
     max-width: 250px;
-    text-align: center;
+    text-align: center
 }
 
 .teacher-image img {
@@ -184,68 +174,39 @@ h2 {
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid var(--primary-color);
-    margin-bottom: 1rem;
+    margin-bottom: 1rem
 }
 
 .teacher-card h3 {
     font-family: 'Patrick Hand', cursive;
     font-size: 1.5rem;
-    color: var(--heading-color);
+    color: var(--heading-color)
 }
 
 .teacher-card p {
     font-size: 1rem;
     color: var(--text-color);
-    margin-top: 0.5rem;
+    margin-top: .5rem
 }
 
-
-
-/* Footer Styling */
 footer {
     background-color: var(--primary-color);
     padding: 1.5rem;
     text-align: center;
-    border-top: 2px solid var(--accent-color);
+    border-top: 2px solid var(--accent-color)
 }
 
 footer p {
     color: #fff;
     font-size: 1.1rem;
-    margin: 0;
+    margin: 0
 }
 
-/* Shared Styling for Section Lists (Weekly Schedule and Parent Resources) */
-.section-list {
-    list-style: none; /* Remove bullets */
-    padding: 0;
-    margin: 0;
-}
-
-.section-item {
-    background-color: var(--secondary-color);
-    padding: 1.25rem;
-    margin: 10px 0;
-    border-radius: 12px;
-    transition: background-color 0.3s, color 0.3s;
-    font-size: 1.25rem;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.section-item:hover {
-    background-color: var(--primary-color);
-    color: #fff;
-}
-
-/* General Styling for the Schedule */
 .schedule-container {
     margin: 2rem auto;
-    max-width: 100%;
+    max-width: 100%
 }
 
-/* Accordion Styling */
 details summary {
     background-color: var(--secondary-color);
     padding: 1rem;
@@ -255,90 +216,90 @@ details summary {
     border: 1px solid var(--border-color);
     border-radius: 10px;
     margin-bottom: 5px;
-    outline: none;
-    color: var(--text-color);
+    outline: 0;
+    color: var(--text-color)
 }
 
 details summary:hover {
     background-color: var(--primary-color);
-    color: white;
+    color: #fff
 }
 
 details ul {
     padding: 1rem;
     margin: 0;
-    list-style: none;
+    list-style: none
 }
 
 details ul li {
-    padding: 0.75rem 0;
+    padding: .75rem 0;
     border-bottom: 1px solid var(--border-color);
-    color: var(--text-color);
+    color: var(--text-color)
 }
 
 details[open] summary {
     background-color: var(--primary-color);
-    color: white;
-    border-radius: 10px 10px 0 0;
+    color: #fff;
+    border-radius: 10px 10px 0 0
 }
 
-/* Matrix Table Styling */
 .schedule-table {
     width: 100%;
     border-collapse: collapse;
     text-align: center;
     background-color: var(--background-color);
-    border-radius: 15px;
+    border-radius: 15px
 }
 
-.schedule-table th, .schedule-table td {
+.schedule-table td,
+.schedule-table th {
     padding: 1rem;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--border-color)
 }
 
 .schedule-table th {
     background-color: var(--secondary-color);
     font-family: 'Patrick Hand', cursive;
-    color: #fff;
+    color: #fff
 }
 
 .schedule-table td {
     background-color: #f9f9f9;
-    font-family: 'Comic Sans MS', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Comic Sans MS', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width:768px) {
     .matrix-schedule {
-        display: none;  /* Hide matrix table on mobile */
+        display: none
     }
 
     .accordion-schedule {
-        display: block; /* Show accordion on mobile */
+        display: block
     }
+
     section {
         margin: 1rem;
-        padding: 1.5rem;
+        padding: 1.5rem
     }
 
     .grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr
     }
 
     h2 {
-        font-size: 1.75rem;
+        font-size: 1.75rem
     }
 
     header h1 {
-        text-align: center;
+        text-align: center
     }
 
     footer p {
-        font-size: 1rem;
+        font-size: 1rem
     }
-    
+
     .teacher-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr
     }
 }
 
@@ -346,3 +307,4 @@ details[open] summary {
     .accordion-schedule {
         display: none; /* Hide accordion on desktop */
     }
+}
